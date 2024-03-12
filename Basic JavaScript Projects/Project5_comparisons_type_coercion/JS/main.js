@@ -12,6 +12,10 @@ function myFunction3() {
 
 console.log("This is part of the JavaScript course.");
 
+function myFunction3A() {
+    document.getElementById("Test3").innerHTML = typeof "Adam" + "<br>" + typeof 503;
+}
+
 function myFunction4 () {
     const myWindow = window.open();
     myWindow.document.write(10 == 10);
@@ -34,7 +38,15 @@ function myFunction7() {
 
 //This is an OR operator. Either must be true to return true
 function myFunction8() {
-    document.getElementById("Test8").innerHTML = 7 > 3 || 11 > 15;
+    document.getElementById("Test8").innerHTML = 7 > 3 || 11 < 15;
+}
+
+function myFunction9() {
+    document.getElementById("Test9").innerHTML = "thirty" + 9;
+}
+
+function myFunction10() {
+    document.getElementById("Test10").innerHTML = 75 < 74;
 }
 
 //a NOT operator. This will return false
