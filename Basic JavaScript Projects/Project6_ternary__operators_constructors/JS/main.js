@@ -50,3 +50,13 @@ function myFunction_Cats() {
     document.getElementById("New_and_This").innerHTML = "Willow is our " + Willow.Animal_Gender + " " + Willow.Animal_Breed + " cat, who is a beautiful " + Willow.Animal_Color + " color. She is our oldest cat, turning " + Willow.Animal_Age + " this year.";
 }
 
+//Nested function within another established function for counting, that will add five to the starting value of 15
+function count_Function() {
+    document.getElementById("Counting").innerHTML = Count();
+    function Count() {
+        var Starting_point = 15;
+        function Plus_five() {Starting_point += 5;}
+        Plus_five();
+        return Starting_point;
+    }
+}
