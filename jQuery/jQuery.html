@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+</head>
+
+<script>
+$(document).ready(function() {
+    $("html").append(
+        "<body>\
+            <div id='container'>\
+                <div id='inner'>\
+                    <h1>Basic jQuery</h1>\
+                    <p id='1'>Paragraph 1</p>\
+                    <p id='2'>Paragraph 2</p>\
+                    <p id='3'>Paragraph 3</p>\
+                </div>\
+            </div>\
+        </body>"
+    );
+    // Uses CSS to make Paragraph 2 red.
+    $("#2").css({"color":"red"});
+
+    // Hides h1 when you click on Paragraph 3.
+    $("#3").click(function() {
+        $('h1').hide();
+    });
+
+    // An alert immediately pops up and a console log message appears when you click Paragraph 1.
+    $("#1").click(function() {
+        alert( "You clicked paragraph 1!");
+        console.log( "That's right! You clicked it!" )
+    });
+
+    // When you clock on Paragraph 2, it fades the opacity.
+    $("#2").click(function() {
+        $('#2').fadeTo(1000, 0.5);
+    });
+});
+
+</script>
+</html>
